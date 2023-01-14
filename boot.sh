@@ -32,7 +32,7 @@ trap shutdown SIGTERM SIGHUP SIGQUIT SIGINT
 # store environment variables
 export > /etc/envvars
 
-PATH=/bin:/sbin:/usr/bin
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
 # run all scripts in the run_once folder
 if ! /bin/run-parts /etc/run_once
